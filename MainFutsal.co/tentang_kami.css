@@ -1,0 +1,66 @@
+.tentang_kami,
+.beranda {
+  padding: 10rem 7% 1.4rem;
+}
+
+.tentang_kami h2,
+.beranda h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.tentang_kami h2 span {
+  color: var(--primary);
+}
+
+.tentang_kami .row {
+  display: flex;
+}
+
+.tentang_kami .row .tentang_kami-img {
+  flex: 1 1 35rem;
+  margin-right: 1rem;
+}
+
+.tentang_kami .row .tentang_kami-img img {
+  width: 100%;
+}
+
+.tentang_kami .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  margin-left: 1rem;
+}
+
+.tentang_kami .row .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tentang_kami .row .content p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.tentang_kami .row {
+  flex-wrap: wrap;
+}
+
+.tentang_kami .row .content {
+  padding: 0;
+}
+
+.tentang_kami .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}
