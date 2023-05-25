@@ -1,8 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MainFutsal.co</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/extra.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
-  <body></body>
+  <body>
+    <div class="container">
+      <input type="checkbox" name="check">
+      <div class="loginForm">
+        <header>Form Login</header>
+        <form action="#">
+          <input type="text" placeholder="Masukan email">
+          <input type="password" placeholder="Masukan password">
+          <a href="#">Lupa password?</a>
+          <input type="button" value="login" class="button">
+        </form>
+
+        <div class="signup">
+          <span class="signup">
+            Belum punya akun?
+          <label for="check">Daftar</label>
+          </span>
+        </div>
+      </div>
+      <div class="register form">
+        <header>Form Registrasi</header>
+        <form action="#">
+          <input type="text" placeholder="Masukan username">
+          <input type="text" placeholder="Masukan email">
+          <input type="password" placeholder="Masukan password">
+          <input type="text" placeholder="Masukan no. telpon">
+        </form>
+        <div class="signup">
+          <span class="signup">
+            Sudah punya akun?
+          <label for="check">Masuk</label>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
