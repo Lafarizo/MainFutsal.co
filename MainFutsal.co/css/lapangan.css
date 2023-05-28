@@ -1,0 +1,184 @@
+:root {
+  --primary: #50b700;
+  --bg: #010101;
+  --textColor: #1b2741;
+  --starColor: #f67043;
+  --sectionBack: #f7f6f9;
+}
+
+* {
+	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	outline: none;
+  	border: none;
+  	text-decoration: none;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--bg);
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  opacity: 85%;
+  align-items: center;
+  padding: 1.2rem 10%;
+  background-color: #1c1b1b;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-a a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-a a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-b a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-b a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 10% 1.2rem;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	display: grid;
+	background-color: var(--primary);
+	text-align: justify;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	margin-bottom: 2.7rem;
+}
+
+.header h1 {
+	font-size: 3rem;
+	color: #fff;
+	line-height: 1.2;
+}
+
+.product {
+	width: calc(33.33% - 2rem);
+	position: relative;
+	background-color: var(--sectionBack);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+	display: flex;
+	gap: 1rem;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0.3rem 0.5rem 1rem;
+	transition: .3s;
+	place-items: center;
+}
+
+.product:hover {
+	transform: scale(1.07);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.product .image{	
+	width: 50%;
+	height: 200px%;
+	display: grid;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.product .image img {
+	max-height: 200px;
+	object-fit: cover;
+}
+
+.product .namePrice {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.product .namePrice h3 {
+	font-size: 14pt;
+	text-transform: capitalize;
+	color: var(--textColor);
+}
+
+.product .namePrice span {
+	font-size: 12pt;
+	color: var(--starColor);
+}
+
+.product .namePrice p {
+	font-size: 9pt;
+	line-height: 25px;
+}
+
+.product .stars svg {
+	font-size: 1.3rem;
+	color: var(--starColor);
+}
+
+.product .sewa {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.product .sewa button {
+	padding: 8px 16px;
+	border-radius: 7px;
+	border: none;
+	background-color: var(--textColor);
+	color: var(--sectionBack);
+	font-size: 10pt;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.product .sewa button:hover {
+	transform: scale(1.1);
+}
