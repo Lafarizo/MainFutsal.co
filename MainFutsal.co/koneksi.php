@@ -1,5 +1,5 @@
 <?php 
-	$username = "root";
+    $username = "root";
     $password = "";
     $database = "db_mainfutsal";
     $hostname = "localhost";
