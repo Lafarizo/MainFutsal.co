@@ -1,8 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>MainFutsal.co</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Kontak Kami</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/kontak.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
-  <body></body>
-</html>
+  <body>
+    <!-- NavBar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Main</span>Futsal.co</a>
+
+      <div class="navbar-a">
+        <a href="index.html">Home</a>
+        <a href="lapangan.html">Lapangan</a>
+        <a href="kontak_kami.html">kontak Kami</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+
+      <div class="navbar-b">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- About Section Start -->
+    <section class="kontak_kami" id="kontak_kami">
+      <h2><span>Kontak</span> Kami</h2>
+
+      <div class="row">
+        <div class="kontak_kami-img">
+          <img src="images/about.jpg" alt="kontak Kami">
+        </div>
+        <div class="content">
+          <form action="">
+            <input type="text" placeholder="Nama">
+            <input type="email" placeholder="Alamat Email">
+            <input type="phone" placeholder="Telepon">
+            <textarea rows="10" placeholder="Pesan"></textarea>
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script> 
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+  </html>
