@@ -1,0 +1,210 @@
+:root {
+    --primary: #50b700;
+    --bg: #010101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    margin: -20px 0 50px;
+    padding: 10px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    opacity: 85%;
+    align-items: center;
+    padding: 1.2rem 10%;
+    background-color: #1c1b1b;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .navbar-logo {
+font-size: 2rem;
+font-weight: 700;
+color: #fff;
+font-style: italic;
+}
+
+.navbar .navbar-logo span {
+color: var(--primary);
+}
+
+.navbar .navbar-a a {
+color: #fff;
+display: inline-block;
+font-size: 1.1rem;
+margin: 0 1rem;
+}
+
+.navbar .navbar-a a:hover {
+color: var(--primary);
+}
+
+.navbar .navbar-b a {
+color: #fff;
+margin: 0 0.5rem;
+}
+
+.navbar .navbar-b a:hover {
+color: var(--primary);
+}
+
+#hamburger-menu {
+display: none;
+}
+
+input,
+textarea {
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid var(--primary);
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #46a100;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: bold;
+    padding: 12px 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+textarea {
+    height: 90px;
+}
+
+/* kontak Kami*/
+
+.kontak_kami {
+  padding: 5rem 7% 1.4rem;
+}
+
+.kontak_kami h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.kontak_kami h2 span {
+  color: var(--primary);
+}
+
+.kontak_kami .row {
+  display: flex;
+}
+
+.kontak_kami .row .kontak_kami-img {
+  flex: 1 1 35rem;
+}
+
+.kontak_kami .row .kontak_kami-img img{
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.kontak_kami .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  margin-left: 1rem;
+}
+
+/* Media Queries */
+
+/* Desktop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  html {
+    font-size: 90%;
+  }
+
+  .kontak_kami .row .kontak_kami-img {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-a {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #1c1b1b;
+    width: 22rem;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: auto;
+  }
+
+  .navbar .navbar-a.active {
+    right: 0;
+  }
+
+  .navbar .navbar-a a {
+    color: #fff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+  }
+
+.kontak_kami .row {
+  flex-wrap: wrap;
+}
+
+.kontak_kami .row .content {
+  padding: 0;
+}
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 85%;
+  }
+}
